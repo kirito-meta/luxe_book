@@ -1,0 +1,75 @@
+name: luxe_book
+description: Next-generation premium booking platform.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2 # ✅ Aligned perfectly with 'flutter'
+  # Supabase
+  supabase_flutter: ^2.8.0
+  image_picker: ^1.0.7
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Routing
+  go_router: ^14.8.0
+
+  # Animations & Visuals
+  flutter_animate: ^4.5.2
+  lottie: ^3.3.1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+
+
+  # UI Components
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.17
+  smooth_page_indicator: ^1.2.0+3
+  flutter_staggered_grid_view: ^0.7.0
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+  url_launcher: ^6.3.1
+
+  share_plus: ^7.2.0
+  table_calendar: ^3.0.9
+  # Payments
+  flutter_stripe: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.14
+  custom_lint: ^0.7.0
+
+flutter:
+  uses-material-design: true
+  shaders:
+    - assets/shaders/aurora.frag
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+    - assets/shaders/
+  fonts:
+    - family: Satoshi
+      fonts:
+        - asset: assets/fonts/Satoshi-Regular.otf
+        - asset: assets/fonts/Satoshi-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Satoshi-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Satoshi-Black.otf
+          weight: 900
